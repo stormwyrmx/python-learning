@@ -1,0 +1,6 @@
+kun = ("蔡徐坤",24,["唱","跳","rap","篮球"])
+print(kun.index(24))
+print(kun[0])
+kun[2].remove("rap")
+kun[2].append("coding")
+print(kun)
