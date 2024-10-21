@@ -9,6 +9,7 @@ from _09_module_module import *
 from _04_list.list_test import *
 nums
 
+numpy.ndarray
 _08_function.def_test()
 
 # count_girl()

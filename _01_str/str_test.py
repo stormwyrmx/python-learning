@@ -1,6 +1,7 @@
 a="1"
 b=2
 a+str(b)
+
 print(a,b)
 
 name="yuki asuna"

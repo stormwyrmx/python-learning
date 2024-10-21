@@ -5,3 +5,5 @@ fuck_new=fuck.replace(" ","|")
 print(fuck_new)
 fucks = fuck_new.split("|")
 print(fucks)
+
+

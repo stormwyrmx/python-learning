@@ -18,7 +18,7 @@ for i in range(3):
         result=True
         break
 
-if result is True:
+if result:
     print(congratulation)
-elif result is False:
+elif result:
     print(message_sorry)

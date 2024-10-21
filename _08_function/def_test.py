@@ -1,5 +1,7 @@
 def hello():
     print("hello _08_function!")
+    if " ":
+        print("True")
 
 if __name__ == '__main__':
     hello()
