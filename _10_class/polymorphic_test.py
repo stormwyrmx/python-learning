@@ -1,3 +1,4 @@
+from astropy.utils.console import human_time
 
 
 class Human:
@@ -9,6 +10,7 @@ class Human:
 
     def eat(self):
         pass
+
 
 class Girl(Human):
     def speak(self):
@@ -35,6 +37,7 @@ def check_human(human:Human):
     human.speak()
     human.walk()
     human.eat()
+
 
 
 girl = Girl()

@@ -11,3 +11,5 @@ for i in range(1,21):
         if balance==0:
             print("工资发完了,下个月领取吧")
             break
+
+print(i)

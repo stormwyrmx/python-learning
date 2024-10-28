@@ -1,7 +1,7 @@
 class Phone:
-    __is_5g_enable=True
+    # __is_5g_enable=True
 
-    def __init__(self,__is_5g_enable):
+    def __init__(self,__is_5g_enable=True):  # 等号=直接指定默认值，有默认值的参数必须排最后
         self.__is_5g_enable=__is_5g_enable
 
     def __check_5g(self):

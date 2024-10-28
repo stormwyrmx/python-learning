@@ -8,3 +8,4 @@ result = np.dot(n1, n2)
 plt.imshow(result, cmap='gray')
 
 plt.show()
+plt.rcParams

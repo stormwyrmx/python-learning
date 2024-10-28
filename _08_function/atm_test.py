@@ -23,6 +23,12 @@ def query_balance(show_header):
 def deposit():
     print("---------------存款------------------")
     deposit_money = int(input("请输入存款金额："))
+    # .函数中变量的作用域:
+    # 创建于函数外部，它是全局（Global）的，它在这个py文件内部的任何地方可见。
+    # 创建于函数内部，它是局部（Local）的，它只能在函数内部才能访问，在函数外部不可见。
+    # 全局变量和局部变量重名，函数内会访问到局部变量，函数外访问到全局变量。
+    # 函数内部能访问全局变量，但不能修改！
+    # 如果非要在函数内部修改全局变量，需要声明global
     global money
     money += deposit_money
     print(f"{name}您好,您成功存款{deposit_money}元")

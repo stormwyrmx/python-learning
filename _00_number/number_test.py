@@ -6,7 +6,8 @@ c=3-20
 print(-1*-8)
 d=3**2
 print(str(-16/-2))
-print(17 // 2)
+print(17 / 2)
+print(17//2)
 print(17 % 9)
 
 num=10

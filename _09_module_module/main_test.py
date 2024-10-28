@@ -7,6 +7,7 @@ import _08_function
 import numpy
 from _09_module_module import *
 from _04_list.list_test import *
+
 nums
 
 numpy.ndarray
