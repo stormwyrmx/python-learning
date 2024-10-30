@@ -7,5 +7,3 @@ class Record:
 
     def __str__(self):
         return f'{self.date},{self.order_id},{self.money},{self.province}'
-
-    def __
