@@ -55,7 +55,7 @@ print(A)
 print(B)
 print(np.vstack((A, B)))  # vertical stack 竖直方向加，变得是0维的
 print(np.concatenate((A, B), axis=0))
-print(np.hstack((A, B)))  # horizontal stack 水平方向加，变得是0维的
+print(np.hstack((A, B)))  # horizontal stack 水平方向加，变得是1维的
 print(np.concatenate((A, B), axis=1))
 print(A[:, np.newaxis])  # add a new axis
 
