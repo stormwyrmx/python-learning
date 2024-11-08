@@ -4,7 +4,7 @@ np.arcsin(1)
 print("-----------numpy数组的算术运算------------")
 # 将列表转换为数组
 x = np.array([1.0, 2.00, 3.0],np.int32)  # 1-dimensional arrays with 3 elements
-print(x)  # numpy默认打印会省去小数点后的0
+print(x)  # numpy默认打印会省去小数点后的0，会带一个点
 print(type(x))
 y=np.array([4,5,6,])
 print(x+y)
@@ -54,12 +54,12 @@ print("------------数组的合并与分割-------------")
 print(A)
 print(B)
 print(np.vstack((A, B)))  # vertical stack 竖直方向加，变得是0维的
-print(np.concatenate((A, B), axis=0))
+print(np.concatenate((A, B), axis=0))  # axis是什么，就保留什么维度
 print(np.hstack((A, B)))  # horizontal stack 水平方向加，变得是1维的
 print(np.concatenate((A, B), axis=1))
 print(A[:, np.newaxis])  # add a new axis
 
-print(np.vsplit(A,2))  # 竖直方向分割（从2*3变成1*3），变得是0维的
+print(np.vsplit(A,2))  # 竖直方向分割（从n*3变成1*3），变得是0维的。水平方向分割，则从3*n变成3*1
 print(np.split(A,2,axis=0))  # split the array into 2 parts along the horizontal axis
 
 print("------------数组的拷贝-------------")
