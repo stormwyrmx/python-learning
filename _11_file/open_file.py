@@ -10,7 +10,7 @@ def write_file():
 def append_file():
     f = open('a.txt', 'a', encoding='utf-8')
     data=['姓名\t','年龄\t','性别\n','琪琪\t','18\t','女\n','麻衣\t','19\t','女\n']
-    f.writelines(data)
+    f.writelines(data)  # writelines接收一个字符串列表
     f.close()
 
 def read_file():
