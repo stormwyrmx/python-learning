@@ -25,7 +25,7 @@ class JsonFileReader:
         record_list = []
         contents = Path(self.file_path).read_text('utf-8')
         for line in contents.splitlines():
-            data_dict = json.loads(line)
+            data_dict = json.loads(line)  # 每一个line是一个json字符串
             record = Record(data_dict['date'], data_dict['order_id'], int(data_dict['money']), data_dict['province'])
             record_list.append(record)
         return record_list
