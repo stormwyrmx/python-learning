@@ -1,11 +1,12 @@
 import os
 
 """
-
+The os module in Python provides a way of 
+using operating system-dependent functionality
 """
 
 def os_functions():
-    print(os.getcwd())
+    print(os.getcwd())  # cwd=current working directory
     print(os.listdir())  # list all files in the current directory
     print(os.listdir("../data"))  # list all files in the data directory
     # os.mkdir("girls")
