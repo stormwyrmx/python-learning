@@ -92,8 +92,8 @@ def pandas_dataframe_select():
     print(df.loc["a":"c", "A":"C"])  # 选择a到c行，A到C列更贴切 Excel 中的使用原则
     print(df.loc['a':'c', :])  # 选择多行多列。每一个,隔开的部分都是一个维度（都可以当做一个列表的切片）
 
-    print(df.iloc[0:3, 1:3])  # 选择前三行，前三列
-    print(df.iloc[[1,2], :])  # 选择前三行，所有列
+    print(df.iloc[0:3, 1:3])  # 选择
+    print(df.iloc[[1,2], :])  # 选择
 
     row_labels = df.index[2:4]
     print(row_labels)

@@ -38,7 +38,7 @@ print(np.array([1, 2, 3]).shape)
 print(A.shape)  # shape of the array
 print(A.ndim)  # number of dimensions
 print(A.dtype)  # data type
-print(A.size)  # number of elements
+print(A.size)  # number of elements = torch中的x.numel()
 B= np.array([[7,8,9], [-1,-2,-3]])
 print(A+B)  # element-wise sum
 print(A*B)  # element-wise product
