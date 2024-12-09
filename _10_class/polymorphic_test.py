@@ -11,6 +11,8 @@ class Human:
     def eat(self):
         pass
 
+    def _kawayi(self):
+        pass
 
 class Girl(Human):
     def speak(self):
@@ -37,9 +39,11 @@ def check_human(human:Human):
     human.speak()
     human.walk()
     human.eat()
+    human._kawayi()
 
 
 
 girl = Girl()
 boy = Boy()
 check_human(girl)
+

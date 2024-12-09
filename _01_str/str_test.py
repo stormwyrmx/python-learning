@@ -14,5 +14,3 @@ print(message)
 message2=r"我叫小琪琪，今年17岁啦！\n"  # r表示原始字符串raw string，不会转义
 # A raw string treats backslashes as literal characters and does not interpret them as escape characters
 print(message2)
-
-

@@ -3,6 +3,7 @@ from data_define import *
 import json
 
 
+
 class TextFileReader:
     def __init__(self, file_path):
         self.file_path = file_path

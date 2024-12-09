@@ -89,11 +89,11 @@ def pandas_dataframe_select():
         columns=list("ABCD"))
     print(df)
     print(df[["C", "B"]])  # 选择多列
-    print(df.loc["a":"c", "A":"C"])  # 选择a到c行，A到C列更贴切 Excel 中的使用原则
+    print(df.loc["a":"c", "A":"C"])  # 选择a到c行(包含c行)，A到C列更贴切 Excel 中的使用原则
     print(df.loc['a':'c', :])  # 选择多行多列。每一个,隔开的部分都是一个维度（都可以当做一个列表的切片）
 
-    print(df.iloc[0:3, 1:3])  # 选择
-    print(df.iloc[[1,2], :])  # 选择
+    print(df.iloc[0:3, 1:3])  # 选择0到2行，1到2列
+    print(df.iloc[[1,2], :])  # 选择1和2行，所有列
 
     row_labels = df.index[2:4]
     print(row_labels)
@@ -109,7 +109,9 @@ def pandas_dataframe_functions():
     df = pd.DataFrame(data, index=['a', 'b', 'c', 'd'], columns=['one', 'two', 'three'])
     print(df)
     print(df.keys())  # 返回列名
-    print(df.values)  # 返回数据（二维数组）
+    print(df.columns)
+    print(df.index)
+    print(df.values,type(df.values))  # 返回数据（二维数组）
     print(df.dropna(axis=0))  # 删除包含 NaN 的行
     print(df.fillna(0))
 

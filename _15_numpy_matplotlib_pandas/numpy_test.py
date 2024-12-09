@@ -34,6 +34,7 @@ print("------------矩阵的元素运算-------------")
 # N-dimensional array
 A = np.array([[1, 2, 3], [4, 5, 6, ]])
 print(A)
+print(type(A))
 print(np.array([1, 2, 3]).shape)
 print(A.shape)  # shape of the array
 print(A.ndim)  # number of dimensions
@@ -60,7 +61,7 @@ print(np.concatenate((A, B), axis=1))
 print(A[:, np.newaxis])  # add a new axis
 
 print(np.vsplit(A,2))  # 竖直方向分割（从n*3变成1*3），变得是0维的。水平方向分割，则从3*n变成3*1
-print(np.split(A,2,axis=0))  # split the array into 2 parts along the horizontal axis
+print(np.split(A,2,axis=0))  # split the array into 2 parts。axis=0 refers to the first axis (rows) in a 2D array.
 
 print("------------数组的拷贝-------------")
 C=A.copy()

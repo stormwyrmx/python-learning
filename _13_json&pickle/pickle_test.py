@@ -25,5 +25,5 @@ def pickle_file_test():
         print(data)
 
 if __name__ == '__main__':
-    # pickle_test()
-    pickle_file_test()
+    pickle_test()
+    # pickle_file_test()

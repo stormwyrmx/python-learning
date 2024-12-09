@@ -13,6 +13,7 @@ class MyPhone(Phone):
 
     def call_by_5g(self):
         if self.is_5g_available:
+            print(self.producer)
             print("calling by 5g")
         else:
             super().call_by_4g()
