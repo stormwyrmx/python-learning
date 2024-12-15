@@ -1,5 +1,3 @@
-from astropy.utils.console import human_time
-
 
 class Human:
     def speak(self):

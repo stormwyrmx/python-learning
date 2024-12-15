@@ -34,6 +34,7 @@ print("------------矩阵的元素运算-------------")
 # N-dimensional array
 A = np.array([[1, 2, 3], [4, 5, 6, ]])
 print(A)
+
 print(type(A))
 print(np.array([1, 2, 3]).shape)
 print(A.shape)  # shape of the array

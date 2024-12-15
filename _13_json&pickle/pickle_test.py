@@ -4,7 +4,7 @@ import pickle
 pickle和json的区别：
     - pickle可以序列化python的任意对象，包括函数，类，对象等
     - json只能序列化python的基本数据类型，不能序列化函数，类，对象等
-    - pickle序列化的结果是字节码，json序列化的结果是字符串
+    - pickle序列化的结果是字节码，json序列化的结果是字符串，类型是<class 'str'>
 """
 
 def pickle_test():

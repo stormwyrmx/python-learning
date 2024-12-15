@@ -32,3 +32,8 @@ for name in employees_names:
         employees.get(name)['工资'] += 1000
 
 print(employees)
+
+c = {'hu': '555', 'li': '666'}
+for key, value in c.items():
+    print(key)
+    print(value)

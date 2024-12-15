@@ -1,3 +1,4 @@
+
 count=0
 
 
@@ -9,6 +10,7 @@ def count_girl():
 
 if __name__ == '__main__':
     count_girl()
+
 
 """
 __all__ is a list in a Python module that defines the public interface of the module. 
