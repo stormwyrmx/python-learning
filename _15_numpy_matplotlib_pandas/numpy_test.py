@@ -1,6 +1,9 @@
 import numpy as np
 
 np.arcsin(1)
+"""
+所有的element-wise product都要求是numpy数组，而不是list
+"""
 print("-----------numpy数组的算术运算------------")
 # 将列表转换为数组
 x = np.array([1.0, 2.00, 3.0],np.int32)  # 1-dimensional arrays with 3 elements
@@ -56,7 +59,7 @@ print("------------数组的合并与分割-------------")
 print(A)
 print(B)
 print(np.vstack((A, B)))  # vertical stack 竖直方向加，变得是0维的
-print(np.concatenate((A, B), axis=0))  # axis是什么，就保留什么维度
+print(np.concatenate((A, B), axis=0))  # axis是什么，在什么方向上加
 print(np.hstack((A, B)))  # horizontal stack 水平方向加，变得是1维的
 print(np.concatenate((A, B), axis=1))
 print(A[:, np.newaxis])  # add a new axis
@@ -82,7 +85,7 @@ print(A)
 print(type(A))
 print(A[np.array([0, 2, 4])])  # 这是 NumPy 数组的高级索引功能，允许你使用数组作为索引来访问特定位置的元素。
 print(A>3)  # 这是 NumPy 数组的广播和元素级比较操作，返回一个布尔数组，表示每个元素是否满足条件。
-print(A[A>3])  # 这是布尔索引，使用布尔数组来选择满足条件的元素。
+print(A[A>3])  # 这是布尔索引，使用布尔数组来选择满足条件的元素。output all elements of the array A that are greater than 3
 
 
 
