@@ -53,8 +53,9 @@ def json_file_test():
     with open('data.json','r',encoding='utf-8') as f:
         data=json.load(f)
         print(data)
+        print(data['name'],data['age'],data['size'])
         print(type(data))
 
 if __name__ == '__main__':
-    # json_file_test()
-    json_test()
+    json_file_test()
+    # json_test()
