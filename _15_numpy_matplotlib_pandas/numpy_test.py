@@ -4,6 +4,15 @@ np.arcsin(1)
 """
 所有的element-wise product都要求是numpy数组，而不是list
 """
+
+"""
+numpy广播规则：
+The resulting array returned after broadcasting will have the same number of dimensions as the array with the greatest number of dimensions.
+如果数组维度不同，短的数组会在前面补上1，以匹配较大数组的维度数
+然后，逐维度检查数组形状，保证满足广播规则（即两个数组在某个维度上的形状要么相同，要么其中一个为1），并最终计算结果数组的形状
+在任何维度中，如果一个数组的大小为 1，而另一个数组的大小大于 1，则第一个数组会沿着这个维度被重复扩展至匹配第二个数组的在这个维度的大小
+e.g. 1*3的数组和2*3的数组相加，1*3的数组会被扩展成2*3的数组 但是1*2的数组和2*3的数组相加，会报错
+"""
 print("-----------numpy数组的算术运算------------")
 # 将列表转换为数组
 x = np.array([1.0, 2.00, 3.0],np.int32)  # 1-dimensional arrays with 3 elements
