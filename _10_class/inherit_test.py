@@ -6,6 +6,8 @@ class Phone:
     def call_by_4g(self):
         print("callling by 4g")
 
+
+
 """
 继承的内容（通过super()调用）
 属性：子类继承父类的所有属性。（继承的意思就是全部写进去）

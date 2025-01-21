@@ -19,7 +19,7 @@ def pickle_test():
 
 def pickle_file_test():
     with open('data.pkl','wb') as f:
-        data={"name":"husiqi","age":20,"size":103}
+        data={"name":"husiqi","age":22,"size":103}
         pickle.dump(data,f)
     with open('data.pkl','rb') as f:
         data=pickle.load(f)

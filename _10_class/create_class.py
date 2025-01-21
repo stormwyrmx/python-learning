@@ -14,7 +14,7 @@ class Girl:
 
 for i in range(1,4):
     print(f"当前录入第{i}位女孩子的信息,总共需要录入3位女孩子")
-    girl=Girl(input("请输入姓名:"),input("请输入年龄:"),input("请输入地址:"))
+    girl=Girl(input("请输入姓名:"), input("请输入年龄:"), input("请输入地址:"))
     girl.print_self()
-
+    print(girl.name)
 
