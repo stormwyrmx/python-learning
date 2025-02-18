@@ -6,9 +6,9 @@ c=3-20
 print(-1*-8)
 d=3**2
 print(str(-16/-2))
-print(17 / 2)
-print(17//2)
-print(17 % 9)
+print(17 / 2)  # 带小数的除法
+print(17//2)  # 整除
+print(17 % 9)  # 取余
 
 num=10
 num/=2  # num变成浮点数
@@ -29,4 +29,3 @@ money-=5000
 print("买13代i7花了4000"+"元")
 money-=4000
 print("还剩",money,"元")
-
