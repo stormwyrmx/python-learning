@@ -89,7 +89,7 @@ def pandas_dataframe_select():
         columns=list("ABCD"))
     print(df)
     print(df[["C", "B"]])  # 选择多列
-    print(df.loc["a":"c", "A":"C"])  # 选择a到c行(包含c行)，A到C列更贴切 Excel 中的使用原则
+    print(df.loc["a":"c", "A":"C"])  # 选择a到c行(包含c行)，A到C列更贴切 Excel 中的使用原则。用字母表示就是左右都是闭区间
     print(df.loc['a':'c', :])  # 选择多行多列。每一个,隔开的部分都是一个维度（都可以当做一个列表的切片）
 
     print(df.iloc[0:3, 1:3])  # 选择0到2行，1到2列

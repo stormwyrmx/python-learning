@@ -57,5 +57,5 @@ def json_file_test():
         print(type(data))
 
 if __name__ == '__main__':
-    json_file_test()
-    # json_test()
+    # json_file_test()
+    json_test()

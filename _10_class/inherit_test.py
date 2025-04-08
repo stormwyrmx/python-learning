@@ -27,6 +27,12 @@ class MyPhone(Phone):
             print(self.producer)
             print("calling by 5g")
         else:
+            """
+            如果将来MyPhone类重写了call_by_4g方法，那么：  
+            self.call_by_4g()会调用被重写的版本
+            super().call_by_4g()会继续调用父类的版本
+            推荐使用super().call_by_4g()，因为它明确表示你的意图是调用父类方法，代码的可读性和可维护性更好。
+            """
             super().call_by_4g()
 
 

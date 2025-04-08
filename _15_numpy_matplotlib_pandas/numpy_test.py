@@ -37,6 +37,7 @@ print(a.sum())
 print(np.sum(a))
 # the axis parameter indicates which axis gets collapsed.
 # axis=0 collapses the rows (i.e., it sums the elements of each column),
+# axis指明哪个维度，哪个维度就会被压缩
 print(np.sum(a, axis=0))
 print(np.sum(a, axis=1))
 
@@ -62,6 +63,7 @@ print(x + A)  # broadcasting A是2*3的矩阵，x是1*3的矩阵，x会被扩展
 
 print("------------矩阵的矩阵运算-------------")
 print(np.dot(A, B.T))  # matrix multiplication
+print(A@B.T)
 print(A.dot(B.T))  # transpose and dot product
 
 print("------------数组的合并与分割-------------")

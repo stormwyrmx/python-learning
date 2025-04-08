@@ -1,4 +1,5 @@
 def with_write_file():
+    # with语句是一种上下文管理器，能确保文件在操作完成后自动关闭，即使发生异常也会关闭，避免资源泄露。
     with open('data/src.txt', 'w',encoding='utf-8') as f:  # /src.txt是绝对路径，是根目录下的。或者也可以写为./src.txt
         f.write('你好，世界！\n')
 
