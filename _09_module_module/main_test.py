@@ -1,9 +1,10 @@
-# from girl import *
+from girl import *
 # from _04_list import *
-# girl.count_girl()
-# girl.print_girl("husiqi")
+# count_girl()
+print_girl("husiqi")
 
-import _08_function
+# import _08_function
+from _08_function import def_test
 import numpy
 from _09_module_module import *
 from _04_list.list_test import *
@@ -15,10 +16,7 @@ current_directory = os.getcwd()
 print(f"Current directory: {current_directory}")
 
 # 可以保存在site-packages里或者当地目录下两种方法来调用模块
-nums
-
-numpy.ndarray
-_08_function.def_test()
+# _08_function.def_test()
 
 # count_girl()
 # print_girl("husiqi")

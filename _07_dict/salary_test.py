@@ -34,6 +34,7 @@ for name in employees_names:
 
 print(employees)
 
+
 c = {'hu': '555', 'li': '666'}
 for key, value in c.items():
     print(key)

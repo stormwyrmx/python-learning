@@ -29,13 +29,14 @@ def os_advanced_functions():
     # os.rename("test.txt","test_new.txt")
 
     # 获取文件的属性
-    print(os.stat("test_new.txt"))
+    print(os.stat("data/test_new.txt"))
     # 启动一个外部程序
     os.startfile("C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Anaconda3 (64-bit)/Anaconda Prompt.lnk")
 
 def os_path_functions():
-    print(os.path.abspath("test_new.txt"))
-    print(os.path.exists("test_new.txt"))
+    os.path.abspath(__file__)
+    print(os.path.abspath("data/test_new.txt"))
+    print(os.path.exists("data/test_new.txt"))
     print(os.path.exists("girls"))
     print(os.path.join('../_15_numpy_matplotlib_pandas/', 'test_new.txt'))
     print(os.path.split('C:/Users/lenovo/Desktop/Python/Python-100-Days/Day01/test_new.txt'))  # 元组形式返回路径和文件名
@@ -43,11 +44,17 @@ def os_path_functions():
     print(os.path.basename('C:/Users/lenovo/Desktop/Python/Python-100-Days/Day01/test_new.txt'))
     print(os.path.dirname('C:/Users/lenovo/Desktop/Python/Python-100-Days/Day01/test_new.txt'))
     print(os.path.isdir('girls'))
-    print(os.path.isfile("test_new.txt"))
+    print(os.path.isfile("data/test_new.txt"))
 
 
 
 if __name__ == '__main__':
-    # os_functions()
-    # os_advanced_functions()
-    os_path_functions()
+    choice=input('please insert 1 to 3\n')
+    if choice == '1':
+        os_functions()
+    elif choice == '2':
+        os_advanced_functions()
+    elif choice == '3':
+        os_path_functions()
+    else:
+        print("无效选择")
