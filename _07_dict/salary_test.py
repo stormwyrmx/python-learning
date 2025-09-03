@@ -36,6 +36,8 @@ print(employees)
 
 
 c = {'hu': '555', 'li': '666'}
+# 返回一个dict_items对象，这是一个包含所有键值对的可迭代对象，每个键值对以元组(tuple)的形式表示
+print(c.items())
 for key, value in c.items():
     print(key)
     print(value)

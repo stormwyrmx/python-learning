@@ -37,7 +37,7 @@ def copy_file(src, dst):
 
 if __name__ == '__main__':
     # write_file()
-    # read_file()
+    read_file()
     # append_file()
     # advance_read_file()
     copy_file('data/leishen.png', 'data/leishen_copy.png')
