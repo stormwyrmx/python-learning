@@ -14,7 +14,6 @@ def greet():
 
 
 if __name__ == '__main__':
-
     age: int = 18
     girl: str = "husiqi"
     fuck()

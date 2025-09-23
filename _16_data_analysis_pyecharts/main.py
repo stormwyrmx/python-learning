@@ -1,4 +1,4 @@
-from _16_data_analysis.data_define import Record
+from _16_data_analysis_pyecharts.data_define import Record
 from file_utils import *
 from pyecharts.charts import Bar
 from pyecharts.options import *
